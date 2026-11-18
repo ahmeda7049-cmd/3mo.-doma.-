@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#0E1928" />
+      <stop offset="100%" stop-color="#060A11" />
+    </radialGradient>
+    <linearGradient id="snakeGrad" x1="90" y1="390" x2="410" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0BA858" />
+      <stop offset="55%" stop-color="#22FF88" />
+      <stop offset="100%" stop-color="#86FFBD" />
+    </linearGradient>
+    <radialGradient id="appleGrad" cx="38%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FF8FA0" />
+      <stop offset="35%" stop-color="#FF2A44" />
+      <stop offset="100%" stop-color="#8A0A1D" />
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect x="18" y="18" width="476" height="476" rx="98" stroke="#22FF88" stroke-opacity="0.28" stroke-width="4" />
+
+  <!-- Subtle neon grid -->
+  <g stroke="#22FF88" stroke-opacity="0.1" stroke-width="2">
+    <line x1="128" y1="40" x2="128" y2="472" />
+    <line x1="256" y1="40" x2="256" y2="472" />
+    <line x1="384" y1="40" x2="384" y2="472" />
+    <line x1="40" y1="128" x2="472" y2="128" />
+    <line x1="40" y1="256" x2="472" y2="256" />
+    <line x1="40" y1="384" x2="472" y2="384" />
+  </g>
+
+  <!-- Curved neon snake -->
+  <path
+    d="M116 364 C116 290, 210 315, 224 242 C238 168, 150 156, 206 116 C252 84, 314 128, 326 196"
+    stroke="#22FF88"
+    stroke-opacity="0.22"
+    stroke-width="64"
+    stroke-linecap="round"
+  />
+  <path
+    d="M116 364 C116 290, 210 315, 224 242 C238 168, 150 156, 206 116 C252 84, 314 128, 326 196"
+    stroke="url(#snakeGrad)"
+    stroke-width="40"
+    stroke-linecap="round"
+  />
+
+  <!-- Snake head -->
+  <circle cx="328" cy="204" r="28" fill="#22FF88" stroke="#063D22" stroke-width="5" />
+  <circle cx="338" cy="193" r="6.5" fill="#ECFFF4" />
+  <circle cx="340" cy="193" r="3.2" fill="#070B12" />
+  <circle cx="320" cy="215" r="6.5" fill="#ECFFF4" />
+  <circle cx="322" cy="215" r="3.2" fill="#070B12" />
+
+  <!-- Shiny red 3D apple -->
+  <circle cx="378" cy="340" r="50" fill="#FF2A44" fill-opacity="0.22" />
+  <circle cx="378" cy="340" r="34" fill="url(#appleGrad)" stroke="#FF8FA0" stroke-opacity="0.5" stroke-width="2" />
+  <ellipse cx="364" cy="326" rx="10" ry="5.5" transform="rotate(-35 364 326)" fill="#FFFFFF" fill-opacity="0.65" />
+  <path d="M378 308 Q382 290 392 286" stroke="#8C5332" stroke-width="5" stroke-linecap="round" />
+  <path d="M382 296 Q400 282 408 298 Q394 308 382 296 Z" fill="#22C55E" />
+</svg>
